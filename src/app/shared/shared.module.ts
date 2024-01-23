@@ -4,6 +4,7 @@ import { MaterialModule } from './material/material.module';
 import { FormErrorComponent } from './components/form-error/form-error.component';
 import { FullNamePipe } from './pipes/full-name.pipe';
 import { AgePipe } from './pipes/age.pipe';
+import { FontSize20Directive } from './directives/font-size20.directive';
 
 
 
@@ -11,7 +12,9 @@ import { AgePipe } from './pipes/age.pipe';
   declarations: [
     FormErrorComponent,
     FullNamePipe,
-    AgePipe
+    AgePipe,
+    FontSize20Directive,
+    
   ],
   imports: [
     CommonModule
@@ -20,7 +23,8 @@ import { AgePipe } from './pipes/age.pipe';
     MaterialModule,
     FormErrorComponent,
     FullNamePipe,
-    AgePipe
+    AgePipe,
+    FontSize20Directive
   ]
 })
 export class SharedModule { }
